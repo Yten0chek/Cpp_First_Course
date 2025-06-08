@@ -34,7 +34,7 @@ void Tree::DeleteTree(Node* pTemp)
 		DeleteTree(pTemp->pRight); //Вход в правую ветку
 
 #ifdef DEBUG
-	std::cout << pTemp->Data << " "; //Вывод нынешнего узла (только в режиме DeBug)
+	std::cout << pTemp->Data << " "; //Вывод нынешнего удаляемого узла (только в режиме DeBug)
 #endif
 	delete pTemp;
 }
